@@ -3,12 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css"> 
-        <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My-Checkup-todo-list</title>
 </head>
 <body>
 <header>
-    <h1>Заголовок моего сайта</h1>
+    <h1>Управление задачами</h1>
+    <nav>
+        <a href="index.html#entrance">Вход |</a>
+        <a href="index.html#authoriz">Регистрация</a>
+    </nav>
 </header>
+<main>
+
+<!-- Форма входа-->
+    <div class="registration" id="entrance">
+        <h2>Вход</h2>
+        <form action="" method="get">
+            <label>Имя пользователя (логин):<br>
+                <input type="text" name="username" placeholder="Введите логин"><br><br>
+            </label><br>
+            <label>Пароль:<br>
+                <input type="password" name="pwd" placeholder="Введите пароль"><br><br>
+            </label><br>
+                <button> Авторизоваться</button>
+        </form>
+    </div>
+
+<!-- Форма регистрации-->
+    <div class="registration" id="authoriz">
+        <h2>Регистрация</h2>
+        <form form action="" method="get">
+            <label>Введите адрес электронной почты:<br>
+                <input type="email" name="user-email"><br><br>
+            </label><br>
+            <label>Задайте логин:<br>
+                <input type="text" name="username" placeholder="не менее 6 символов"><br><br>
+            </label><br>
+            <label>Задайте пароль:<br>
+                <input type="password" name="pwd1" placeholder="не менее 8 символов"><br><br>
+            </label><br>
+            <label>Повторите пароль:<br>
+                <input type="password" name="pwd2"><br><br>
+            </label><br>
+                <button>Зарегистрироваться</button>
+        </form>
+    </div>
+
+<!-- Раздел со списком задач-->
+    <div class="tasks">
+        <h2>Ваши задачи:</h2>
+        <form form action="" method="get">
+            <label>Добавить новую задачу:<br>
+                <input type="text" name="newtask" placeholder="не более 100 символов">
+            </label>
+                <button> Добавить </button>
+        </form>
+        <ul>
+            <li><div class="task-item">Позавтракать в 06:30
+                    <button class="task-button">Удалить</button>
+                </div>
+            </li>
+            <li><div class="task-item">Пообедать в 13:00
+                    <button class="task-button">Удалить</button>
+                </div>
+            </li>
+            <li><div class="task-item">Поужинать в 18:00
+                    <button class="task-button">Удалить</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer></footer>
 </body>
 </html>
